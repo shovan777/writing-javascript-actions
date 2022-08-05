@@ -1,0 +1,17 @@
+name: "my hello action"
+description: "say hello with GitHub Actions"
+inputs:
+  first-greeting:
+    description: "who do you want to greet?"
+    default: "world"
+    required: true
+  second-greeting:
+    description: "who is there with you?"
+    default: "water the fire"
+    required: true
+  third-greeting:
+    description: "who is this?"
+    required: false
+runs:
+  using: "node12"
+  main: "main.js"
